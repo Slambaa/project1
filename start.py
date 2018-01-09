@@ -8,7 +8,7 @@ score = 0
 while score < 196:
     answer = input("country name")
 
-    if answer in countrylist:
+    if answer.lower() in countrylist:
         countrylist.remove(answer)
         correctans.append(answer)
         print("correct")
